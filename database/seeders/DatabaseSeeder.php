@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
     $adminRole=Role::create(['name'=>RolesEnum::Admin->value]);
-    $userRole=Role::create(['name'=>RolesEnum::Admin->value]);
+    $userRole=Role::create(['name'=>RolesEnum::User->value]);
     $commenterRole=Role::create(['name'=>RolesEnum::Commenter->value]);
 
     $manageUserPermissions=Permission::create([
